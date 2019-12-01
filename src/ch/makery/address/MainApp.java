@@ -1,5 +1,6 @@
 package ch.makery.address;
 
+import java.awt.*;
 import java.io.IOException;
 
 import javafx.application.Application;
@@ -14,6 +15,7 @@ import javafx.stage.Stage;
 import ch.makery.address.model.Person;
 import ch.makery.address.view.PersonEditDialogController;
 import ch.makery.address.view.PersonOverviewController;
+import javafx.scene.image.Image;
 
 public class MainApp extends Application {
 
@@ -53,6 +55,8 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("AddressApp");
+        this.primaryStage.getIcons().add(new Image("file:resources/images/iconfinder_Address_Book_86957.png"));
+
 
         initRootLayout();
 
